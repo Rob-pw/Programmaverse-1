@@ -15,7 +15,7 @@ We're active on [Trello](https://trello.com/b/yIZtjqy6/programmaverse) and [Gitt
 #Start Here!
 
 
-Download and install Meteor (Be patient!)
+Download and [install](https://www.meteor.com/install) Meteor (Be patient!)
 
     curl https://install.meteor.com/ | sh
 
@@ -45,7 +45,7 @@ List of actual collaborators.
 Core developers
 [@Ildus](), [@igop](), [@n370](), [@jenthebest](), [@rob-pw]().  
 
-We're already working with a [few packages]().
+We're already working with a few meteor [packages]().
 
 You can install and remove packages with
 
@@ -54,5 +54,10 @@ You can install and remove packages with
 
  * [Less]()
  * [Nemo64:Bootstrap]()
+ * [account-password]()
  * [account-ui]()
- * [account-ui]()
+
+##Other Resources
+ * [Bootstrap docs](http://getbootstrap.com/css/)
+ * [Bootstrap the Meteor way](http://www.manuel-schoebel.com/blog/meteorjs-and-twitter-bootstrap---the-right-way)
+ * [Meteor user authentication tutorial](http://help.nitrous.io/meteor-app/)
