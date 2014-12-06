@@ -52,12 +52,15 @@ You can install and remove packages with
     meteor remove <package_name> [...]
     meteor add <package_name> [...]
 
- * [Less]()
- * [Nemo64:Bootstrap]()
- * [account-password]()
- * [account-ui]()
+ * [Less](http://docs.meteor.com/#/full/less)
+ * [Nemo64:Bootstrap](https://github.com/Nemo64/meteor-bootstrap)
+ * [account-password](http://docs.meteor.com/#/full/accounts_passwords)
+ * [account-ui](http://docs.meteor.com/#/full/accountsui)
 
 ##Other Resources
+ * [Meteor docs](http://docs.meteor.com/#/full/)
  * [Bootstrap docs](http://getbootstrap.com/css/)
  * [Bootstrap the Meteor way](http://www.manuel-schoebel.com/blog/meteorjs-and-twitter-bootstrap---the-right-way)
  * [Meteor user authentication tutorial](http://help.nitrous.io/meteor-app/)
+ * [Meteor session/user authentication API](http://docs.meteor.com/#/full/session_equals)
+ * [Tutprial for customizing account-ui](http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor)
