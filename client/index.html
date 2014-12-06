@@ -1,17 +1,28 @@
 <head>
   <title>Programmaverse</title>
-  <link href='http://fonts.googleapis.com/css?family=Exo:600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
   <header class='container-fluid'>
     <div class="row">
-      <div id="logo">
-        <div id="infinity">
-        </div>
-        <h1><span>P</span>rogrammaverse</h1>
+      <div id="logo" class="col-xs-3">
+        <h1>Programmaverse</h1>
       </div>
-      <nav></nav> 
+      <nav class="col-xs-7">
+        <p class='text-right'>
+          {{> loginButtons}}
+        </p>
+      </nav> 
     </div>
   </header>
+  <section>
+    <div class="container">
+
+      <h1>
+         {{#if currentUser}}
+           You are now logged in.
+         {{/if}}
+      </h1>
+    </div>
+  </section>
 </body>
