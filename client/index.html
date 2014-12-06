@@ -1,0 +1,19 @@
+<head>
+  <title>Programmaverse</title>  
+</head>
+
+<body>
+  <header class='container-fluid'>
+    <div class="row">
+      <div id="logo">Jen's logo</div>
+      <nav></nav> 
+    </div>
+  </header>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
