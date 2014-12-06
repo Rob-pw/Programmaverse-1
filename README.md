@@ -1,7 +1,7 @@
 #Programmaverse
 
 
-"Meteor is an ultra-simple environment for building modern websites. What once took weeks, even with the best tools, now takes hours with Meteor." — [Meteor](http://docs.meteor.com/#/full/structuringyourapp)
+>"Meteor is an ultra-simple environment for building modern websites. What once took weeks, even with the best tools, now takes hours with Meteor." — [Meteor](http://docs.meteor.com/#/full/structuringyourapp)
 
 ###Awesome!
 
@@ -23,27 +23,27 @@ Clone this repo, branch and run the app!
 
     git clone https://github.com/randomhackers/Programmaverse
     cd Programmaverse
+    git branch --set-upstream-to=origin/meteor-app meteor-app
     git checkout -b <your-branch>
     meteor
 
-Learn the basics
-================
+###Learn the basics!
+
 Understand the [App strcture](http://docs.meteor.com/#/full/structuringyourapp).
 
 
-Do your stuff, commit and merge.
+###Do your stuff!
+
+###Commit and merge.
 
     git commit -m "A nice message"
     git checkout meteor-app
     git merge <your-branch>
 
-If you're already a collaborator, push your changes.
+If you're a Global Hackathon team member, push your changes.
 
     git push origin meteor-app
 
-List of actual collaborators.  
-Core developers
-[@IldusSadykov](https://github.com/IldusSadykov), [@igop](https://github.com/igop), [@n370](https://github.com/n370), [@jenthebest](https://github.com/jenthebest), [@Rob-pw](https://github.com/Rob-pw).  
 
 We're already working with a few meteor [packages]().
 
@@ -57,10 +57,16 @@ You can install and remove packages with
  * [account-password](http://docs.meteor.com/#/full/accounts_passwords)
  * [account-ui](http://docs.meteor.com/#/full/accountsui)
 
+
+##Core developers
+[@IldusSadykov](https://github.com/IldusSadykov), [@igop](https://github.com/igop), [@n370](https://github.com/n370), [@jenthebest](https://github.com/jenthebest), [@Rob-pw](https://github.com/Rob-pw).
+
 ##Other Resources
+ * [Meteor docs adding user accounts](https://www.meteor.com/try/9)
+ * [Color pallet](http://www.color-hex.com/color/3399cc)
  * [Meteor docs](http://docs.meteor.com/#/full/)
  * [Bootstrap docs](http://getbootstrap.com/css/)
  * [Bootstrap the Meteor way](http://www.manuel-schoebel.com/blog/meteorjs-and-twitter-bootstrap---the-right-way)
  * [Meteor user authentication tutorial](http://help.nitrous.io/meteor-app/)
- * [Meteor session/user authentication API](http://docs.meteor.com/#/full/session_equals)
- * [Tutprial for customizing account-ui](http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor)
+ * [Meteor docs session/user authentication API](http://docs.meteor.com/#/full/session_equals)
+ * [Tutorial for customizing account-ui](http://blog.benmcmahen.com/post/41741539120/building-a-customized-accounts-ui-for-meteor)
