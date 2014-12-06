@@ -1,0 +1,13 @@
+body {
+	background-color: #eaf4f9;
+}
+
+img {
+	height: 75px;
+}
+
+#top-bar {
+	background-color: white;
+	height: 75px;
+	padding-top: 10px;
+}
