@@ -43,7 +43,7 @@ If you're already a collaborator, push your changes.
 
 List of actual collaborators.  
 Core developers
-[@Ildus](), [@igop](), [@n370](), [@jenthebest](), [@rob-pw]().  
+[@IldusSadykov](https://github.com/IldusSadykov), [@igop](https://github.com/igop), [@n370](https://github.com/n370), [@jenthebest](https://github.com/jenthebest), [@Rob-pw](https://github.com/Rob-pw).  
 
 We're already working with a few meteor [packages]().
 
