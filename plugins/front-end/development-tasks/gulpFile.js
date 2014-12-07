@@ -44,9 +44,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('stylesheets', function () {
-        return gulp.src(path.join(paths.source.styles, '/**/*.scss'))
-            .pipe(gulpIf(linting, scssLintChannel()))
-            .pipe(sass())
+        return gulp.src(path.join(paths.source.styles, '/**/*.css'))
             .pipe(gulpIf(currentEnvironmentToBuild === 'dev', cssBeautify(), cssMinify()))
             .pipe(gulp.dest(paths.output.styles));
     });
@@ -84,6 +82,8 @@ var gulp = require('gulp'),
             paths = config.makeDestinations(currentEnvironmentToBuild);
 
             console.log('Using paths: ', paths);
+
+            console.log("Linting?", linting);
 
             runSequence('base', 'assets', 'static-html', 'stylesheets', 'scripts', next);
         })();
