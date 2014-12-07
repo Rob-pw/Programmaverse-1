@@ -18,7 +18,7 @@ var destinations = {
 destinations.output = {
     base: '../build/{env}',
     paths : {
-        styles: '/stylesheets/',
+        styles: '/styles/',
         assets: '/static/assets/',
         scripts : {
             base: '/js/',
