@@ -1,6 +1,5 @@
 body {
     padding-top: 100px;
-    padding-bottom: 40px;
     background-color: #eee;
 }
 
@@ -36,4 +35,8 @@ body {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.filter-divider {
+    margin: 10px auto;
 }
