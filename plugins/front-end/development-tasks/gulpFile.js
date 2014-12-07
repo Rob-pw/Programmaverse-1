@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     gulpUtils = require('gulp-util'),
     gulpIf = require('gulp-if'),
     filter = require('gulp-filter'),
+    browserify = require('gulp-browserify'),
     jsLint = require('gulp-jshint'),
     jsBeautify = require('gulp-jsbeautifier'),
     jsUglify = require('gulp-uglify'),
@@ -31,6 +32,7 @@ var gulp = require('gulp'),
         */
 
     var jsChannel = lazypipe()
+        .pipe(browserify)
         .pipe(function () {
             return gulpIf(currentEnvironmentToBuild === 'dev', jsBeautify(), jsUglify());
         });
@@ -126,6 +128,13 @@ var gulp = require('gulp'),
 
     gulp.task('live', ['build', 'browser-sync'], function () {
         gulp.watch(path.join(paths.source.styles, '*.css'), ['stylesheets', reload]);
+        gulp.watch(path.join(paths.source.base, '/**/*.html'), ['static-html', reload]);
+        
+        try {
+            gulp.watch(path.join(paths.source.modules, '/**/*.js'), ['scripts', reload]);
+        } catch (ex) {
+            console.error("We should be dead, because of " + ex);
+        }
     });
     
     gulp.task('default', ['build']);
