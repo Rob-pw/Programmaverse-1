@@ -4,11 +4,10 @@ module.exports = function setup (options, imports, register) {
     var web = imports['web'];
 
     var Hapi = require('hapi'),
-        pack = new Hapi.Pack(),
-        packCount = config.packs.length;
+        pack = new Hapi.Pack();
 
-    for (var i = config.packs.length - 1; i >= 0; i -= 1) {
-        var packConfig = config.packs[i];
+    for (var prop in config.packs) {
+        var packConfig = config.packs[prop];
 
         pack.server(packConfig.port, {
             labels : packConfig.labels
