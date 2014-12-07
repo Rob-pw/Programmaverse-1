@@ -54,8 +54,8 @@ You can install and remove packages with
 
  * [Less](http://docs.meteor.com/#/full/less)
  * [Nemo64:Bootstrap](https://github.com/Nemo64/meteor-bootstrap)
- * [account-password](http://docs.meteor.com/#/full/accounts_passwords)
- * [account-ui](http://docs.meteor.com/#/full/accountsui)
+ * [accounts-password](http://docs.meteor.com/#/full/accounts_passwords)
+ * [accounts-base](http://docs.meteor.com/#/full/accountsui)
 
 
 ##Core developers
