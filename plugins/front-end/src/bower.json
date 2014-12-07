@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.1"
+    "bootstrap": "~3.3.1",
+    "soma.js": "~2.1.1"
   }
 }
