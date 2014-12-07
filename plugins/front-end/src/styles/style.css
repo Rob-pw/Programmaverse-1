@@ -84,3 +84,7 @@ body {
     margin: 0 auto;
     display: block;
 }
+
+#logo {
+    height: 35px;
+}
