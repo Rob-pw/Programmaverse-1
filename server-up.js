@@ -10,7 +10,7 @@ architect.createApp(architectConfig, function (err, app) {
         console.log(app.services);
         var hapiServer = app.services.hapiServer;
 
-        hapiServer.pack.start(function () {
+        hapiServer.server.start(function () {
             console.log("Server started at " + hapiServer.config.packs.web.port);
         });
     }

@@ -4,29 +4,20 @@ module.exports = function setup (options, imports, register) {
     var web = imports['web'];
 
     var Hapi = require('hapi'),
-        pack = new Hapi.Pack();
+        server = new Hapi.Server();
 
     for (var prop in config.packs) {
         var packConfig = config.packs[prop];
 
-        pack.server(packConfig.port, {
+        server.connection({
+            port: packConfig.port,
             labels : packConfig.labels
         });
     }
 
-    console.log(web.config.build.path);
-
-    pack.require('hapi-spa', { folder: web.config.build.path }, function (err) {
-        if (err) {
-            throw err;
-        }
-
-        console.log("hapi-spa UP!");
-    });
-
     register(null, {
         hapiServer : {
-            pack : pack,
+            server : server,
             config : config
         }
     });
