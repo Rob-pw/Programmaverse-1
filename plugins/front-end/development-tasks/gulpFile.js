@@ -3,7 +3,9 @@ var config = require('./gulp-config.js');
 var path = require('path'),
     del = require('del'),
     lazypipe = require('lazypipe'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
 
 var gulp = require('gulp'),
     gulpUtils = require('gulp-util'),
@@ -89,5 +91,14 @@ var gulp = require('gulp'),
         })();
     });
 
+    gulp.task('browser-sync', function () {
+        browserSync.init(null, {
+            proxy: 'localhost:8080'
+        });
+    });
+
+    gulp.task('live', ['build', 'browser-sync'], function () {
+        gulp.watch(path.join(paths.source.styles, '*.css'), ['stylesheets', reload]);
+    });
     gulp.task('default', ['build']);
 })(gulp, config);
