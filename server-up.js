@@ -7,10 +7,11 @@ architect.createApp(architectConfig, function (err, app) {
     if (err) {
         throw err;
     } else {
+        console.log(app.services);
         var hapiServer = app.services.hapiServer;
 
         hapiServer.pack.start(function () {
-            console.log("Hapi pack is up!");
+            console.log("Server started at " + hapiServer.config.packs.web.port);
         });
     }
 });
