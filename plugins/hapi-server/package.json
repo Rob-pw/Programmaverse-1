@@ -1,0 +1,8 @@
+{
+	"name": "hapiServer",
+	"main": "hapiServer.js",
+	"plugin" : {
+		"consumes" : ["web"],
+		"provides" : ["hapiServer"]
+	}
+}

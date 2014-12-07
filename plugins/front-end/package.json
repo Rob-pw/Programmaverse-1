@@ -1,0 +1,8 @@
+{
+	"name": "web",
+	"main": "main.js",
+	"private": true,
+	"plugin" : {
+		"provides" : ["web"]
+	}
+}
