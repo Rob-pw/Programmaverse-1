@@ -17,9 +17,7 @@ var gulp = require('gulp'),
     jsBeautify = require('gulp-jsbeautifier'),
     jsUglify = require('gulp-uglify'),
     cssBeautify = require('gulp-cssbeautify'),
-    cssMinify = require('gulp-minify-css'),
-    sass = require('gulp-sass'),
-    scssLint = require('gulp-scss-lint');
+    cssMinify = require('gulp-minify-css');
 
 (function (gulp, config) {
     var paths,
