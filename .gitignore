@@ -31,4 +31,4 @@ node_modules
 bower_components
 
 # Development build
-build/dev
+build
