@@ -1,5 +1,6 @@
 body {
     padding-top: 100px;
+    padding-bottom: 40px;
     background-color: #eee;
 }
 
@@ -35,52 +36,4 @@ body {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-}
-
-.filter-divider {
-    margin: 10px auto;
-}
-
-.chat {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.chat li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
-}
-
-.chat li.left .chat-body {
-    margin-left: 60px;
-}
-
-.chat li.right .chat-body {
-    margin-right: 60px;
-}
-
-.chat li .chat-body p {
-    margin: 0;
-    color: #777777;
-}
-
-.chat-name {
-    margin-bottom: 0;
-}
-
-.panel-chat .glyphicon, .chat .glyphicon {
-    margin-right: 5px;
-}
-
-.panel-body-chat {
-    overflow-y: scroll;
-    height: 300px;
-    padding: 10px;
-}
-
-.img-reward {
-    margin: 0 auto;
-    display: block;
 }
