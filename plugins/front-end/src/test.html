@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<script src='js/vendor/soma.js'></script>
+	<script src='js/modules/main.js'></script>
+	<script src='js/modules/services/challenge.js'></script>
+	<script src='js/modules/services/userService.js'></script>
+	<script src='js/modules/services/feedbackService.js'></script>
+	<script src='js/modules/services/rewardService.js'></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Programmaverse</title>
+</head>
+
+<body>
+	<header>
+		<div id="top-bar">
+		<img src="http://cl.ly/image/2A3l1Q1W1i0f/logo.png" alt="Programmaverse logo" />
+		</div>
+	</header>
+	<section>
+	Hello, friend.
+	</section>
+
+	<script>
+		verse.ready(function () {
+			var challenge = verse.injector.getValue('challengeService');
+
+		            challenge.submit({
+		                name: 'MyChallenge',
+		                points : 100
+		            });
+		});
+            </script>
+</body>
+</html>
