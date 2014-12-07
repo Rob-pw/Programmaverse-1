@@ -58,7 +58,7 @@ You can install and remove packages with
  * [accounts-base](http://docs.meteor.com/#/full/accountsui)
 
 
-##Core developers
+##Developers
 [@IldusSadykov](https://github.com/IldusSadykov), [@igop](https://github.com/igop), [@n370](https://github.com/n370), [@jenthebest](https://github.com/jenthebest), [@Rob-pw](https://github.com/Rob-pw).
 
 ##Other Resources
