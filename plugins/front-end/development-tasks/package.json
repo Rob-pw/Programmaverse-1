@@ -1,0 +1,8 @@
+{
+	"name": "build",
+	"main": "index.js",
+	"private": true,
+	"plugin" : {
+		"provides" : ["build"]
+	}
+}

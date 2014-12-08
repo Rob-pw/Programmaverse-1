@@ -2,6 +2,6 @@
 	"name": "web-routes",
 	"main": "routes.js",
 	"plugin" : {
-		"consumes" : ["hapiServer"]
+		"consumes" : ["hapiServer", "build"]
 	}
 }

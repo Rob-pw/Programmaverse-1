@@ -18,6 +18,7 @@ var destinations = {
 destinations.output = {
     base: '../build/{env}',
     paths : {
+        areas: '/areas/',
         styles: '/styles/',
         assets: '/static/assets/',
         scripts : {
@@ -36,15 +37,16 @@ destinations.output = {
 };
 
 module.exports = {
-    makeDestinations : function (environment) {
+    makeDestinations : function (environment, absolute) {
         var config = (typeof(environment) === 'string' ? {env: environment} : environment);
 
         var directorySkeleton = makeDirectorySkeleton(destinations);
-        var composedDirectoryStructure = composePaths(config, directorySkeleton);
+        var composedDirectoryStructure = composePaths(config, directorySkeleton, absolute);
 
         return composedDirectoryStructure;
     },
-    environments : ['dev', 'prod']
+    environments : ['dev', 'prod'],
+    defaultEnv : env
 };
 
 function makeSkeleton (destination, base) {
@@ -99,13 +101,17 @@ function makeDirectorySkeleton (destinations) {
     return skeleton;
 }
 
-function composePaths (config, directorySkeleton) {
+function composePaths (config, directorySkeleton, absolute) {
     var clone = _.cloneDeep(directorySkeleton);
 
     function assign (branch, limb) {
         var value = branch[limb];
 
-        branch[limb] = interpolate(value, config)
+        branch[limb] = interpolate(value, config);
+
+        if (absolute) {
+            branch[limb] = path.resolve(__dirname + '/' + branch[limb]);
+        }
     }
 
     function traverse (branch, next) {
