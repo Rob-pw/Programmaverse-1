@@ -2,6 +2,7 @@
 
 {% block title %}Challenge{% endblock %}
 
+{% block content %}
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
@@ -163,3 +164,4 @@
 <div class="reward" style="display: none;">
 	{% include '../partials/reward.swig' %}
 </div>
+{% endblock %}
