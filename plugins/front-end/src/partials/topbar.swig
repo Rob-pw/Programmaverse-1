@@ -16,7 +16,7 @@
 
 			<ul class="nav navbar-nav navbar-right">
 
-				<li class="active"><a href="hub.html">Hub</a></li>
+				<li class="active"><a href="/hub">Hub</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programming Languages<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">

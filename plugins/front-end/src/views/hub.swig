@@ -38,7 +38,7 @@
 						<div class="col-lg-4">
 							<div class="panel panel-default">
 								<div class="panel-body">
-									<a href="challenge.html"><h4><strong>Challenge name</strong></h4></a>
+									<a href="/challenge"><h4><strong>Challenge name</strong></h4></a>
 									<img src="http://placehold.it/220x160">
 									<p class="small">Short Description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
