@@ -125,11 +125,15 @@ var gulp = require('gulp'),
     });
 
     gulp.task('live', ['build', 'browser-sync'], function () {
-        gulp.watch(path.join(paths.source.styles, '*.css'), ['stylesheets', reload]);
-        gulp.watch(path.join(paths.source.base, '/**/*.html'), ['static-html', reload]);
+        var source = paths.source;
+        var htmlFilter = '/**/*.swig';
+        var htmlPaths = [source.partials + htmlFilter, source.layouts + htmlFilter, source.views + htmlFilter];
+
+        gulp.watch(path.join(source.styles, '*.css'), ['stylesheets', reload]);
+        gulp.watch(htmlPaths, ['static-html', reload]);
         
         try {
-            gulp.watch(path.join(paths.source.modules, '/**/*.js'), ['scripts', reload]);
+            gulp.watch(path.join(source.modules, '/**/*.js'), ['scripts', reload]);
         } catch (ex) {
             console.error("We should be dead, because of " + ex);
         }
