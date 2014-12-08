@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 			</button> <!-- button -->
 
-			<a class="navbar-brand" href="#"><img src="http://cl.ly/image/2A3l1Q1W1i0f/logo.png" id="logo" alt="Programmaverse logo" /></a>
+			<a class="navbar-brand" href="#"><img src="http://cl.ly/image/2a1o430C0j3p/newlogo.png" id="logo" alt="Programmaverse logo" /></a>
 		</div> <!-- navbar-header -->
 
 		<div id="navbar" class="navbar-collapse collapse">
