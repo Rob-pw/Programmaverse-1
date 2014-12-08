@@ -6,7 +6,7 @@ var authService = (function AuthenticationService () {
             req.post('https://login.persona.org/verify', {
                 form : {
                     assertion: assertion,
-                    audience: 'localhost'
+                    audience: 'rob.pw'
                 }
             }, function (err, response, body) {
                 if (err) {
