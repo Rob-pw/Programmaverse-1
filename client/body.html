@@ -2,21 +2,21 @@
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/"><img src='logo.png'></a>
+        <a class="navbar-brand" href="home"><img src='logo.png'></a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Challenges</a></li>
+        <li><a href="challenges">Challenges</a></li>
         {{#if currentUser}}
-          <li><a id='logout' href="#">Log out</a></li>
+          <li><a href="logout">Log out</a></li>
         {{/if}}
       </ul>
     </div>
   </nav>
-  <section id='challenges' class='container-fluid'>
+  <section class='container-fluid'>
     <div class="row">
       <aside class='col-xs-3'>
       {{#if isLoggedIn}}
-        <h4>You're now logged in!</h4>
+        {{> dashboard}}
       {{else}}
         {{#if hasAccount}}
           {{> login}}
@@ -25,9 +25,9 @@
         {{/if}}
       {{/if}}
       </aside>
-      <section id="challenges" class='col-xs-offset-1 col-xs-8'>
-        <div >
-          {{> challenges}}
+      <section class='col-xs-offset-1 col-xs-8'>
+        <div>
+          {{> Template.dynamic template=view }}
         </div>
       </section>
     </div>

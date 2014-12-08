@@ -1,7 +1,7 @@
 if (Meteor.isClient) {
   Template.challenges.helpers({
     challenges: function() { 
-      return Challenges.find({})
+      return Challenges.find({});
     }
   });
 
