@@ -1,0 +1,9 @@
+{
+	"name": "authentication",
+	"main": "auth.js",
+	"private": true,
+	"plugin" : {
+		"consumes" : ["hapiServer", "build"],
+		"provides" : ["authentication"]
+	}
+}

@@ -7,7 +7,6 @@ architect.createApp(architectConfig, function (err, app) {
     if (err) {
         throw err;
     } else {
-        console.log(app.services);
         var hapiServer = app.services.hapiServer;
 
         hapiServer.server.start(function () {
