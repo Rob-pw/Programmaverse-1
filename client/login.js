@@ -1,9 +1,4 @@
-Template.login.helpers({
-  title: "Log in" 
-});
-
 Template.login.events({
-
   'submit #login-form' : function(e, t){
     e.preventDefault();
     // retrieve the input field values
@@ -14,7 +9,7 @@ Template.login.events({
 
       // If validation passes, supply the appropriate fields to the
       // Meteor.loginWithPassword() function.
-      Meteor.loginWithPassword(email, password, function(err){
+    Meteor.loginWithPassword(email, password, function(err){
       if (err) {}
         // The user might not have been found, or their passwword
         // could be incorrect. Inform the user that their
@@ -22,6 +17,13 @@ Template.login.events({
       else {}
         // The user has been logged in.
     });
-       return false; 
-    }
+
+    Session.set('isLoggedIn', true);
+       
+    return false; 
+
+  },
+  'click #signup' : function(){
+    Session.set("hasAccount", false);
+  }
 });

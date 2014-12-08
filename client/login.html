@@ -1,6 +1,6 @@
 <template name="login">
-  <h3>{{title}}</h3>
-  <form role="form">
+  <h3>Log in</h3>
+  <form role="form" id="login-form" action="action">
     <div class="form-group">
       <label for="login-email">Email address</label>
       <input type="email" class="form-control" id="login-email" placeholder="Enter email">
@@ -11,4 +11,5 @@
     </div>
     <button type="submit" id="login-button" class="btn btn-default">Login</button>
   </form> 
+  <p><strong>Don't have an account yet?</strong> <a id='signup' href='#'>Sign up</a> <strong>here!</strong></p>
 </template>
