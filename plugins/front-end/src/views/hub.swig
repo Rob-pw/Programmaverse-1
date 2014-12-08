@@ -2,11 +2,6 @@
 
 {% block title %}Hub{% endblock %}
 
-{% block stylesheets %} 
-<link rel="stylesheet" href="../styles/bootstrap.css">
-<link rel="stylesheet" href="../styles/style.css">
-{% endblock %}
-
 {% block content %}
 <div class="container">
 	<div class="row">
