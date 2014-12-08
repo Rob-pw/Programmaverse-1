@@ -10,7 +10,10 @@ var destinations = {
             styles: '/styles/',
             areas: '/areas/',
             assets: '/assets/',
-            modules: '/modules/'
+            modules: '/modules/',
+            partials: '/partials/',
+            layouts: '/layouts/',
+            views: '/views/'
         }
     }
 };

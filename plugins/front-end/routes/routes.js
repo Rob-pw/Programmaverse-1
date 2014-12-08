@@ -50,9 +50,11 @@ module.exports = function setup (options, imports, register) {
 
     server.views({
         engines : {
-            html : require('handlebars')
+            swig : require('swig')
         },
-        relativeTo: destinations.output.areas,
+        layoutPath: destinations.source.layouts,
+        partialsPath: destinations.source.partials,
+        path: destinations.source.views,
         isCached: false
     });
 
