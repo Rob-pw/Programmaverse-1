@@ -42,11 +42,26 @@
       		</div> <!-- container -->
     	</nav> <!-- navbar -->
 
-		<div class="container">
-			<img src="http://placehold.it/300x300" class="img-reward img-rounded img-responsive">
-			<h1 class="text-center">Your Reward</h1>
-			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sapiente, incidunt enim blanditiis saepe maxime dolorem, laboriosam in id dicta exercitationem consectetur quam dignissimos vitae at quisquam error ipsa, veritatis!</p>
-		</div> <!-- container -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rewardModal">
+  			Reward
+		</button> <!-- button -->
+
+		<div class="modal fade" id="rewardModal" tabindex="-1" role="dialog" aria-labelledby="rewardModalLabel" aria-hidden="true">
+		  	<div class="modal-dialog">
+		    	<div class="modal-content">
+			      	<div class="modal-header">
+			      		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			        	<h4 class="modal-title" id="rewardModalLabel">Your Reward</h4>
+			      	</div> <!-- modal-header -->
+			      	<div class="modal-body">
+			        	<iframe width="100%" height="400px" frameborder="0" scrolling="yes" src="reward_partial.html"></iframe>
+			      	</div> <!-- modal-body -->
+			      	<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      	</div> <!-- modal-footer -->
+		    	</div> <!-- modal-content -->
+		  	</div> <!-- modal-dialog -->
+		</div> <!-- modal -->
 
 		<!-- script -->
 		<script src="../js/vendor/jquery.js"></script>
